@@ -6,7 +6,7 @@
   <title></title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <meta property="og:description" content=".   "/>
-
+  <meta charset="utf-8">
   <style type="text/css">
 
     .content-blockquote{border-left: 4px solid #C4170C;margin-top: calc(3% + .5vw);margin-bottom: calc(3% + .5vw);    font-size: 1.5rem !important;
@@ -104,7 +104,7 @@
   <div class="header" id="myHeader" style="">
     <p style="text-align: center;color: white;font-size: 2em;padding-top: 5px;z-index: 10">INVESTIMENTOS</p>
   </div>
-<iframe src='https://go.perfectpay.com.br/PPU38CK848F?src=pascoa21' style='width:0;height:0;border:0;padding:0;margin:0'></iframe>
+
   <section>
     <div class="container">
 
@@ -132,14 +132,32 @@
 
     </script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		var query = location.search.slice(1);
+		var partes = query.split('&');
+		var data = {};
+		partes.forEach(function (parte) {
+		    var chaveValor = parte.split('=');
+		    var chave = chaveValor[0];
+		    var valor = chaveValor[1];
+		    data[chave] = valor;
+		});
+
+		var url = data['src'];
+
+		     $(document).ready(function () {
+		        $('.custom-url a').attr('href', "https://mestredarenda.com/?" + query);
+		});
+	  </script>
 
 
       <div class="mx-auto divs" style="width: 60%;border-bottom: 1px solid #E5E5E5">
-        <h1 style="margin-top: 20px;font-weight: 600;font-size: 1.7em">DINHEIRO RÁPIDO, DIRETO NA SUA CONTA E COM HORA MARCADA 
+        <h1 style="margin-top: 20px;font-weight: 600;font-size: 1.7em;text-align: left !important;">DINHEIRO RÁPIDO, DIRETO NA SUA CONTA E COM HORA MARCADA</h1>
 </h1>
 
         <p style="font-size: 1.2em;color: #626568">
-          Oportunidade Exclusiva para 320 Pessoas, a contagem regressiva começa agora, que for rápido entra, se vacilar já era….
+          Oportunidade Exclusiva para 320 Pessoas, quem for rápido entra, se vacilar já era...
         </p>
 
         <p style="font-size: 0.9em">São Paulo - SP</p>
